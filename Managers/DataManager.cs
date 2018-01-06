@@ -33,7 +33,7 @@ public class DataManager : MonoBehaviour, IGameManager {
     }
 
     public void LoadGameState() {
-        if (!File.Exists(fileName)) {
+        if(!File.Exists(fileName)) {
             Debug.Log("No saved game");
             return;
         }
